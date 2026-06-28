@@ -1,8 +1,11 @@
 import streamlit as st
+from src.components.header_home import header_home
+from src.ui.base_layout import style_background_home, style_base_layout
 
 def home_screen():
-    st.header("Home Screen")
-
+    style_base_layout()
+    style_background_home()
+    header_home()
     col1, col2 = st.columns(2)
 
     with col1:
