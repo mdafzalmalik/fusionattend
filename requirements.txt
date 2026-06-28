@@ -17,4 +17,4 @@ segno
 pillow
 
 # UI
-streamlit==1.40.2
+streamlit==1.50.0

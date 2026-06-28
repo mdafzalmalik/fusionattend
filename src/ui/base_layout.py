@@ -6,6 +6,12 @@ def style_background_home():
             .stApp{
                 background: #5865f2 !important
             }
+                
+            .stApp div[data-testid="stColumn"]{
+                background: #e0e3ff !important;
+                padding: 2.5rem !important;
+                border-radius: 5rem;
+            }
         </style>
                 """,unsafe_allow_html=True)
 
@@ -14,7 +20,7 @@ def style_background_dashboard():
     st.markdown("""
         <style>
             .stApp{
-                background: #e0e3ff !important
+                background: #e0e3ff !important;
             }
         </style>
                 """,unsafe_allow_html=True)
@@ -37,16 +43,16 @@ def style_base_layout():
             }
             
             h1 {
-                font-family: "Chewy", system-ui;
-                font-size: 3.5rem !important;
-                line-height: 1.1rem !important;
+                font-family: "Chewy", system-ui !important;
+                font-size: 2.5rem !important;
+                line-height: 0.9rem !important;
                 marging-bottome: 0rem !important;
             }
             
             h2 {
-                font-family: "Chewy", system-ui;
-                font-size: 3.5rem !important;
-                line-height: 1.1rem !important;
+                font-family: "Chewy", system-ui !important;
+                font-size: 2rem !important;
+                line-height: 0.9rem !important;
                 marging-bottome: 0rem !important;
             }
             
@@ -54,7 +60,7 @@ def style_base_layout():
                 font-family: "Outfit", sans-serif !important;
             }
             
-            button {
+            button[kind="primary"] {
                 background: #5865f2;
                 border-radius: 1.5rem !important;
                 color: white !important;
